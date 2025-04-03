@@ -1,4 +1,5 @@
-import 'package:daelim_2025/presentation/home/home_screen.dart';
+// import 'package:daelim_2025/presentation/example/example_screen.dart';
+import 'package:daelim_2025/presentation/start/startscreem.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -8,12 +9,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true,
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
       ),
-      home: HomeScreen(),
+      themeMode: ThemeMode.light,
+      home: Startscreen(),
     );
   }
 }
